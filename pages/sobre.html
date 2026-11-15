@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Sobre - Jogo da velha com Bootstrap</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="../css/mystyle.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-cor-que-eu-quero">
+            <section class="container py-1">
+                <a class="navbar-brand" href="https://github.com/VitorHugoLimadeOlivera" target="_blank" rel="noopener">
+                    <img class="img-fluid" width="40em" src="../images/noughts.png" alt="Cadê a imagem">
+                    <span>All Games</span>
+                </a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                    aria-controls="navbar-items" aria-expanded="false" aria-label="Navegação diferente">
+                    <i class="bi bi-filter-square-fill"></i>
+                </button>
+
+                <section class="collapse navbar-collapse" id="navbar-items">
+                    <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="historia.html">História</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dicas.html">Dicas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                </section>
+            </section>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <section class="container" id="container-top">
+            <section class="texto-normal">
+                <h4 class="text-center primary-color mb-3">Sobre o que você quer saber?</h4>
+
+                <ul class="nav nav-pills justify-content-center mb-3" id="abas-sobre" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="aba-charizard" data-bs-toggle="pill" data-bs-target="#sobre-charizard"
+                            type="button" role="tab" aria-controls="sobre-charizard" aria-selected="true">Charizard</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="aba-blastoise" data-bs-toggle="pill" data-bs-target="#sobre-blastoise"
+                            type="button" role="tab" aria-controls="sobre-blastoise" aria-selected="false">Blastoise</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="aba-jogo" data-bs-toggle="pill" data-bs-target="#sobre-jogo"
+                            type="button" role="tab" aria-controls="sobre-jogo" aria-selected="false">Jogo da velha</button>
+                    </li>
+                </ul>
+
+                <section class="tab-content">
+                    <section class="tab-pane fade show active" id="sobre-charizard" role="tabpanel" aria-labelledby="aba-charizard">
+                        <section class="row g-2 text-center">
+                            <section class="col-4"><img class="img-fluid" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png" alt="Charmander"><p>Charmander</p></section>
+                            <section class="col-4"><img class="img-fluid" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png" alt="Charmeleon"><p>Charmeleon</p></section>
+                            <section class="col-4"><img class="img-fluid" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png" alt="Charizard"><p>Charizard</p></section>
+                        </section>
+                        <p class="mt-3">Charizard é o Pokémon número 6 da Pokédex, do tipo Fogo/Voador. Charmander evolui para Charmeleon no nível 16 e para Charizard no nível 36. Ele tem asas e solta chamas pela boca.</p>
+                    </section>
+
+                    <section class="tab-pane fade" id="sobre-blastoise" role="tabpanel" aria-labelledby="aba-blastoise">
+                        <section class="row g-2 text-center">
+                            <section class="col-4"><img class="img-fluid" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png" alt="Squirtle"><p>Squirtle</p></section>
+                            <section class="col-4"><img class="img-fluid" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png" alt="Wartortle"><p>Wartortle</p></section>
+                            <section class="col-4"><img class="img-fluid" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png" alt="Blastoise"><p>Blastoise</p></section>
+                        </section>
+                        <p class="mt-3">Blastoise é o Pokémon número 9 da Pokédex, do tipo Água. Squirtle evolui para Wartortle no nível 16 e para Blastoise no nível 36. Ele dispara jatos de água pelos canhões do casco.</p>
+                    </section>
+
+                    <section class="tab-pane fade" id="sobre-jogo" role="tabpanel" aria-labelledby="aba-jogo">
+                        <img class="img-fluid mb-3" src="../images/tictactoe.jpg" alt="Jogo da velha">
+                        <p>O jogo da velha é disputado em um tabuleiro 3x3 por dois jogadores que alternam as jogadas. Vence quem alinhar três símbolos na horizontal, na vertical ou na diagonal. Existem 255.168 partidas possíveis, e se os dois jogarem bem o resultado é sempre empate.</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
